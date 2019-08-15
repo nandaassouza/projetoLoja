@@ -7,7 +7,7 @@
 <title>Cadastro de Produtos</title>
 </head>
 <body>
-	<form method="post" action="/senai/products">
+	<form method="post" action="/senai/products/ok">
 		<div>
 			<label for="title">Nome: </label>
 			<input type="text" name="title" id="title"/>

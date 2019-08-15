@@ -6,9 +6,10 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.senai.controller.HomeController;
+import br.com.senai.dao.ProductsDao;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses = {HomeController.class})
+@ComponentScan(basePackageClasses = {HomeController.class, ProductsDao.class})
 public class AppWebConfiguration {
 	@Bean
 	public InternalResourceViewResolver internalResourceViewResolver() {
